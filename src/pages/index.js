@@ -78,7 +78,7 @@ export default function Index({ data }) {
             title="Blog"
             description="Guides, references, and tutorials."
           />
-          <Posts data={articles} newspaper />
+          <Posts data={articles} />
         </section>
 
         <section className="section-index">
@@ -86,7 +86,7 @@ export default function Index({ data }) {
             title="Notes"
             description="Life, music, projects, and everything else."
           />
-          <Posts data={notes} newspaper />
+          <Posts data={notes} />
         </section>
 
         <section className="section-index">
@@ -150,6 +150,14 @@ export default function Index({ data }) {
                         rel="noreferrer"
                       >
                         Demo
+                      </a>
+                      <a
+                        className="button small"
+                        href={`https://github.com/taniarascia/${project.slug}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Source
                       </a>
                     </div>
                   </div>
